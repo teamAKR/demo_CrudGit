@@ -36,6 +36,18 @@ public class HomeController {
 		
 	}
 	
+	@RequestMapping("/register")
+	public String SaveUser(@ModelAttribute Student student)
+	{
+	Student s= (Student) service.SaveUser(student);
+		return "index";
+		
+	}
+	
+	
+	
+	
+	@RequestMapping("/login")
 	public String login(@ ModelAttribute Student student)
 	{
 		return "Success";

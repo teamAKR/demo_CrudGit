@@ -17,9 +17,6 @@ UserName:-<input type="text" name="uname">
 PassWord:-<input type="text" name="pass">   
 <br>
 <input type="submit" name="Reg">
-
-  
-
 </form>
 </body>
 </html>
