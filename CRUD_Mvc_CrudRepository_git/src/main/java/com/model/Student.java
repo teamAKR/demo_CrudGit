@@ -16,7 +16,7 @@ public class Student
 	private String name,uname,pass;
 	public int getId() {
 		return id;
-	}
+	}private int vvvid;
 	public void setId(int id) {
 		this.id = id;
 	}
