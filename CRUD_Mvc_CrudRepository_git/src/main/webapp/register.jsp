@@ -18,7 +18,7 @@ PassWord:-<input type="text" name="pass">
 <br>
 <input type="submit" name="Reg">
 
-
+  
 
 </form>
 </body>
