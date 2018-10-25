@@ -10,7 +10,9 @@
 <form action="Login">
 UserName:-<input type="text" name="uname">
 <br>
+<br>
 Password:-<input type="text" name="pass">
+<br>
 <br>
 <input type="submit" value="login">
 <a href="registerpage">Reg</a>

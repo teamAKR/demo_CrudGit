@@ -10,13 +10,14 @@ public class HomeController {
 	@RequestMapping("/")
 	public String Start()
 	{
-		System.out.println("bgcghgbjvnbnghvn");
+		System.out.println("This Will go to the Login PAGE");
 		return "index";
 		
 	}
 	@RequestMapping("registerpage")
 	public String register()
 	{
+		System.out.println("This will go to register PAge");
 		return "register";
 		
 	}
