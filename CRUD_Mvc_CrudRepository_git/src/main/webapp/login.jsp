@@ -8,12 +8,13 @@
 </head>
 <body>
 <form action="Login">
-UserName:-<input type="text" name="uname">
+UserName:-<input type="text" name="username">
 <br>
-Password:-<input type="text" name="pass">
+Password:-<input type="text" name="password">
 <br>
 <input type="submit" value="login">
-<a href="registerpage">Reg</a>
+<a href="registerpage">Register here</a>
+
 </form>
 </body>
 </html>
