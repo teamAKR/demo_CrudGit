@@ -14,7 +14,7 @@ public class HomeController {
 		return "index";
 		
 	}      
-	@RequestMapping("registerpage")
+	@RequestMapping("/registerpage")
 	public String register()
 	{
 		System.out.println("This will go to register PAge");
