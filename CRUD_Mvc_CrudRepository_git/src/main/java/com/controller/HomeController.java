@@ -13,7 +13,7 @@ public class HomeController {
 		System.out.println("This Will go to the Login PAGE");
 		return "index";
 		
-	}    
+	}      
 	@RequestMapping("registerpage")
 	public String register()
 	{

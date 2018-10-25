@@ -14,7 +14,7 @@ Name:-<input type="text" name="name">
 UserName:-<input type="text" name="uname">
 <br>
 <br>
-PassWord:-<input type="text" name="pass">
+PassWord:-<input type="text" name="pass">   
 <br>
 <input type="submit" name="Reg">
 
