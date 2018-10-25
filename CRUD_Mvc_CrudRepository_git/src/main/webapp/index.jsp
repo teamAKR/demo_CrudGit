@@ -15,6 +15,7 @@ Password:-<input type="text" name="pass">
 <br>
 <br>
 <input type="submit" value="login">
+
 <a href="registerpage">Reg</a>
 </form>
 </body>
