@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: CRUD_Mvc_CrudRepository_git
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: Sandip Rathod
+Built-By: admin
 Implementation-Vendor-Id: com
-Build-Jdk: 1.8.0_171
+Build-Jdk: 1.8.0_144
 Implementation-URL: http://projects.spring.io/spring-boot/CRUD_Mvc_Cru
  dRepository_git/
 Created-By: Maven Integration for Eclipse
