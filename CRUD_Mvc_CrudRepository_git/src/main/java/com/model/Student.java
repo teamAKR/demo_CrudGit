@@ -12,6 +12,8 @@ public class Student
 	@Id   
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
+	
+	
 	private String name,uname,pass;
 	public int getId() {
 		return id;
