@@ -1,12 +1,26 @@
 package com.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.model.Student;
+import com.serviceI.ServiceI;
 
 @Controller
 public class HomeController {
+	@Autowired
+	ServiceI service;
 	
 	
+	
+	public ServiceI getService() {
+		return service;
+	}
+	public void setService(ServiceI service) {
+		this.service = service;
+	}
 	@RequestMapping("/")
 	public String Start()
 	{
@@ -21,5 +35,12 @@ public class HomeController {
 		return "register";
 		
 	}
+	
+	public String login(@ ModelAttribute Student student)
+	{
+		return "Success";
+		
+	}
+	
 
 }
