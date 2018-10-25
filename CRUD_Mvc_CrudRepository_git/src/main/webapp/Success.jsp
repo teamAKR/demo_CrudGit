@@ -7,19 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="register">
-Name:-<input type="text" name="name">
-<br>
-<br>
-UserName:-<input type="text" name="uname">
-<br>
-<br>
-PassWord:-<input type="text" name="pass">   
-<br>
-<input type="submit" name="Reg">
-
-  
-
-</form>
+successsss...................
 </body>
 </html>
