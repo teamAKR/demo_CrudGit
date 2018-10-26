@@ -8,7 +8,7 @@
 function add()
 {
 	alert("Add");
-	doccument.myform.action="add()";
+	doccument.myform.action="registerpage";
 	document.myform.submit();
 }
 function del()
@@ -38,10 +38,10 @@ function edit()
 </tr>
 <c:forEach items="${data }" var="s"> 
 <tr>
-	<td>"${s.id}"</td>
-	<td>"${s.name}"</td>
-	<td>"${s.uname}"</td>
-	<td>"${s.pass}"</td>
+	<td>${s.id}</td>
+	<td>${s.name}</td>
+	<td>${s.uname}</td>
+	<td>${s.pass}</td>
 </tr>
 </c:forEach>
 </table>
