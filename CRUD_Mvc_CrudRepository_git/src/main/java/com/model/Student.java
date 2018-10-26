@@ -14,7 +14,9 @@ public class Student
 	private int id;
 	
 	
-	private String name,uname,pass;
+	private String name;
+	private String uname;
+	private String pass;
 	public int getId() {
 		return id;
 	}

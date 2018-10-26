@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.model.Student;
 import com.serviceI.ServiceI;
@@ -59,6 +60,26 @@ public class HomeController
 		List<Student> sl=service.getAllData(st);
 		model.addAttribute("data",sl);
 		return "Success";
+		
+	}
+
+	@RequestMapping("/edit")
+	public String edit(@RequestParam int id,Model model)
+	{
+		System.out.println("This Is In the Edit ");
+		Student stud=service.edit(id);
+		model.addAttribute("data", stud);
+		return "Update";
+	}
+	
+	
+	@RequestMapping("/update")
+	public String update(@ModelAttribute Student st,Model model)
+	{
+		Student s=service.update(st);
+		List<Student> sl=service.getAllData(st);
+		model.addAttribute("data",sl);
+		return "Success" ;
 		
 	}
 	

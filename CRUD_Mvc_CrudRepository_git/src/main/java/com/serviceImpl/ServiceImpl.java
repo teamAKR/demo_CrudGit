@@ -9,7 +9,8 @@ import com.dao.StudentDao;
 import com.model.Student;
 import com.serviceI.ServiceI;
 @Service
-public class ServiceImpl implements ServiceI{
+public class ServiceImpl implements ServiceI
+{
    @Autowired
    StudentDao dao;
    
@@ -41,6 +42,20 @@ public class ServiceImpl implements ServiceI{
 	{
 		
 		return (List<Student>) dao.findAll();
+	}
+
+	@Override
+	public Student update(Student student) 
+	{
+		
+		return  dao.save(student);
+	}
+
+	@Override
+	public Student edit(int id) 
+	{
+		System.out.println("This is in the Edit Serviceimpl");
+		return dao.findOne(id);
 	}
 
 }

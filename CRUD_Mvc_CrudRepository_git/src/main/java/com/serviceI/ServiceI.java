@@ -13,4 +13,8 @@ public interface ServiceI
 
 	List<Student> getAllData(Student st);
 
+	Student update(Student student);
+
+	Student edit(int id);
+
 }

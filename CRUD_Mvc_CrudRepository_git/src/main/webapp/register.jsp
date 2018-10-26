@@ -8,15 +8,17 @@
 </head>
 <body>
 <form action="register">
-Name:-<input type="text" name="name">
-<br>
-<br>
+<table bgcolor="pink">
+<tr><td>Name:-<input type="text" name="name">
+<br></td></tr>
+<tr><td>
 UserName:-<input type="text" name="uname">
-<br>
-<br>
+<br></td></tr>
+<tr><td>
 PassWord:-<input type="text" name="pass">   
-<br>
-<input type="submit" name="Reg">
+<br></td></tr>
+<tr><td><input type="submit" name="Reg"></td></tr>
+</table>
 </form>
 </body>
 </html>
