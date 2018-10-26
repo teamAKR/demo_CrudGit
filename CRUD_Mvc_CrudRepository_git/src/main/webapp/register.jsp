@@ -14,7 +14,7 @@
 
 	LastName <input type="text" name="lastname">
 
-mobilenumber <input type="text" name="mobilenumber">
+    mobilenumber <input type="text" name="mobilenumber">
 
    	 username <input type="text" name="username">
    	 
@@ -26,7 +26,7 @@ mobilenumber <input type="text" name="mobilenumber">
    	 		<option value="2">Manager</option>
    	 		<option value="3">User</option>
    	 </select>
-   	 
+   	 <input type="submit" value="submit">
 </pre>
 	</form>
 </body>

@@ -1,6 +1,5 @@
 package com.controller;
 
-import org.jboss.logging.LoggingClass;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -57,13 +56,13 @@ public class HomeController {
 		
 		switch (user.getRole().getRoleid()) {
 		case 1:
-			
+			model.addAttribute("admin",user);
 			return "adminSuccess";
 		case 2:
-			
+			model.addAttribute("manager",user);
 			return "managerSuccess";
 		case 3:
-			
+			model.addAttribute("user",user);
 			return "userSuccess";
 
 		default:

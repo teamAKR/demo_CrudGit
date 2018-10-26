@@ -6,8 +6,8 @@ import com.model.Login;
 import com.model.User;
 
 public interface UserDao extends CrudRepository<User, Integer> {
-
-	User findOne(Login login);
+	
+	User findOneByLogin(Login login);
 	
 	
 }

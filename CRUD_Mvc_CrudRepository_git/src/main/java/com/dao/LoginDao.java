@@ -6,6 +6,6 @@ import com.model.Login;
 
 public interface LoginDao extends CrudRepository<Login,Integer> {
 
-	Login findOneByUsernameAndPassword();
+	Login findOneByUsernameAndPassword(String string, String string2);
 
 }
