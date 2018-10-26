@@ -68,6 +68,7 @@ public class HomeController
 		System.out.println("In delete....");
 		service.deleteStudent(id);
 		List<Student> list=service.getAllData();
+		System.out.println("annnu");
 		
 		model.addAttribute("msg", "Record Deleted");
 		model.addAttribute("data", list);
