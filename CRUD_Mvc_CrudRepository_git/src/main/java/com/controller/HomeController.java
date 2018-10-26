@@ -62,7 +62,7 @@ public class HomeController
 		return "Success";
 		
 	}
-<<<<<<< HEAD
+
 
 	@RequestMapping("/edit")
 	public String edit(@RequestParam int id,Model model)
@@ -78,14 +78,14 @@ public class HomeController
 	public String update(@ModelAttribute Student st,Model model)
 	{
 		Student s=service.update(st);
-		List<Student> sl=service.getAllData(st);
+		List<Student> sl=service.getAllData();
 		model.addAttribute("data",sl);
 		return "Success" ;
 		
 	}
 	
 
-=======
+
 	@RequestMapping("/del")
 	  public String delete(@RequestParam int id,@ModelAttribute  Student st,Model model)
 	  {
@@ -101,5 +101,5 @@ public class HomeController
 		
 		
 	  }
->>>>>>> refs/heads/master
+
 }

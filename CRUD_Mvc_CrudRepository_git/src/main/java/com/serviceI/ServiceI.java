@@ -13,21 +13,17 @@ public interface ServiceI
 
 	List<Student> getAllData();
 
-<<<<<<< HEAD
+
 	Student update(Student student);
 
 	Student edit(int id);
 
-=======
+
 	
 
 	void deleteStudent(int id);
 
 	
 
-	
-	
 
-	
->>>>>>> refs/heads/master
 }
