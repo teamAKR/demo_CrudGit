@@ -8,13 +8,14 @@
 function add()
 {
 	alert("Add");
-	doccument.myform.action="registerpage";
+	document.myform.action="registerpage";
+	alert("url add")
 	document.myform.submit();
 }
 function del()
 {
 	alert("Delete");
-	doccument.myform.action="del()";
+	document.myform.action="del()";
 	document.myform.submit();
 }
 function edit()
