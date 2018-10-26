@@ -9,4 +9,6 @@ import com.model.Student;
 public interface StudentDao extends CrudRepository<Student, Integer>
 {
 
+	Student findAllByUnameAndPass(String uname, String pass);
+
 }

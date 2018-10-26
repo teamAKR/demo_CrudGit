@@ -1,7 +1,10 @@
 package com.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -9,18 +12,20 @@ import com.model.Student;
 import com.serviceI.ServiceI;
 
 @Controller
-public class HomeController {
+public class HomeController
+{
 	@Autowired
 	ServiceI service;
 	
-	
-	
-	public ServiceI getService() {
+	public ServiceI getService() 
+	{
 		return service;
 	}
-	public void setService(ServiceI service) {
+	public void setService(ServiceI service) 
+	{
 		this.service = service;
 	}
+	
 	@RequestMapping("/")
 	public String Start()
 	{
@@ -44,12 +49,15 @@ public class HomeController {
 		
 	}
 	
-	
-	
-	
 	@RequestMapping("/login")
-	public String login(@ ModelAttribute Student student)
+	public String login(@ ModelAttribute Student student,Model model)
 	{
+		model.addAttribute("msg","Login Succesfully");
+		
+		Student st=service.check(student);
+		System.out.println(st);
+		List<Student> sl=service.getAllData(st);
+		model.addAttribute("data",sl);
 		return "Success";
 		
 	}
