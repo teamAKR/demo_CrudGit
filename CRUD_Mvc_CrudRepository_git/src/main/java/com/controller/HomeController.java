@@ -65,6 +65,7 @@ public class HomeController
 	@RequestMapping("/del")
 	  public String delete(@RequestParam int id,@ModelAttribute  Student st,Model model)
 	  {
+		System.out.println("In delete....");
 		service.deleteStudent(id);
 		List<Student> list=service.getAllData();
 		
