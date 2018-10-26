@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: SpringDataJPA_CRUD_Repository
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: admin
+Built-By: Win7
 Implementation-Vendor-Id: com.controller
-Build-Jdk: 1.8.0_144
+Build-Jdk: 1.8.0_191
 Implementation-URL: http://projects.spring.io/spring-boot/SpringDataJP
  A_CRUD_Repository/
 Created-By: Maven Integration for Eclipse
