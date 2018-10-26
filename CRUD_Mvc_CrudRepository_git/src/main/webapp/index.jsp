@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>  
-<form action="Login">
+<form action="login">
 UserName:-<input type="text" name="uname">
 <br>
 <br>
