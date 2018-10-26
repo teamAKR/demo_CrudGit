@@ -37,10 +37,24 @@ public class ServiceImpl implements ServiceI{
 	}
 
 	@Override
-	public List<Student> getAllData(Student st)
+	public List<Student> getAllData()
 	{
 		
 		return (List<Student>) dao.findAll();
 	}
 
-}
+	
+	@Override
+	public void deleteStudent(int id)
+	{
+		
+		System.out.println(id);
+		dao.delete(id);
+	}
+
+	
+
+	
+	
+	
+	}

@@ -8,19 +8,19 @@
 function add()
 {
 	alert("Add");
-	doccument.myform.action="add()";
+	doccument.myform.action="add";
 	document.myform.submit();
 }
 function del()
 {
 	alert("Delete");
-	doccument.myform.action="del()";
+	document.myform.action="del";
 	document.myform.submit();
 }
 function edit()
 {
 	alert("Edit");
-	doccument.myform.action="edit()";
+	document.myform.action="edit";
 	document.myform.submit();
 }
 </script>
@@ -38,7 +38,8 @@ function edit()
 </tr>
 <c:forEach items="${data }" var="s"> 
 <tr>
-	<td>"${s.id}"</td>
+
+	<td><input type="radio" name="id" value="${s.id}">
 	<td>"${s.name}"</td>
 	<td>"${s.uname}"</td>
 	<td>"${s.pass}"</td>

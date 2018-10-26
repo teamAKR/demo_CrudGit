@@ -11,6 +11,16 @@ public interface ServiceI
 
 	Student check(Student student);
 
-	List<Student> getAllData(Student st);
+	List<Student> getAllData();
 
+	
+
+	void deleteStudent(int id);
+
+	
+
+	
+	
+
+	
 }

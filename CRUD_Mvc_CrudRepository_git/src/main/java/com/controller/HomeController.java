@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.model.Student;
 import com.serviceI.ServiceI;
@@ -16,7 +17,7 @@ public class HomeController
 {
 	@Autowired
 	ServiceI service;
-	bbbbbbbbbbbbbbbbbbb
+	
 	public ServiceI getService() 
 	{
 		return service;
@@ -56,11 +57,22 @@ public class HomeController
 		
 		Student st=service.check(student);
 		System.out.println(st);
-		List<Student> sl=service.getAllData(st);
+		List<Student> sl=service.getAllData();
 		model.addAttribute("data",sl);
 		return "Success";
 		
 	}
-	
-
+	@RequestMapping("/del")
+	  public String delete(@RequestParam int id,@ModelAttribute  Student st,Model model)
+	  {
+		service.deleteStudent(id);
+		List<Student> list=service.getAllData();
+		
+		model.addAttribute("msg", "Record Deleted");
+		model.addAttribute("data", list);
+		
+		return "Success";
+		
+		
+	  }
 }
