@@ -17,7 +17,7 @@ public class HomeController
 {
 	@Autowired
 	ServiceI service;
-	
+
 	public ServiceI getService() 
 	{
 		return service;
@@ -57,11 +57,12 @@ public class HomeController
 		
 		Student st=service.check(student);
 		System.out.println(st);
-		List<Student> sl=service.getAllData(st);
+		List<Student> sl=service.getAllData();
 		model.addAttribute("data",sl);
 		return "Success";
 		
 	}
+<<<<<<< HEAD
 
 	@RequestMapping("/edit")
 	public String edit(@RequestParam int id,Model model)
@@ -84,4 +85,21 @@ public class HomeController
 	}
 	
 
+=======
+	@RequestMapping("/del")
+	  public String delete(@RequestParam int id,@ModelAttribute  Student st,Model model)
+	  {
+		System.out.println("In delete....");
+		service.deleteStudent(id);
+		List<Student> list=service.getAllData();
+		System.out.println("annnu");
+		
+		model.addAttribute("msg", "Record Deleted");
+		model.addAttribute("data", list);
+		
+		return "Success";
+		
+		
+	  }
+>>>>>>> refs/heads/master
 }

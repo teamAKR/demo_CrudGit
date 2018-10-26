@@ -8,13 +8,30 @@
 function add()
 {
 	alert("Add");
+<<<<<<< HEAD
 	document.myform.action="registerpage";
+=======
+<<<<<<< HEAD
+	doccument.myform.action="add";
+=======
+	document.myform.action="registerpage";
+	alert("url add")
+>>>>>>> branch 'master' of https://github.com/teamAKR/demo_CrudGit.git
+>>>>>>> refs/heads/master
 	document.myform.submit();
 }
 function del()
 {
 	alert("Delete");
+<<<<<<< HEAD
 	document.myform.action="del";
+=======
+<<<<<<< HEAD
+	document.myform.action="del";
+=======
+	document.myform.action="del()";
+>>>>>>> branch 'master' of https://github.com/teamAKR/demo_CrudGit.git
+>>>>>>> refs/heads/master
 	document.myform.submit();
 }
 function edit()
@@ -38,10 +55,25 @@ function edit()
 </tr>
 <c:forEach items=" ${data }"  var="s"> 
 <tr>
+<<<<<<< HEAD
 	<td><input type="radio"  name="id"  value=" ${s.id}"></td>
 	<td>${s.name}</td>
 	<td>${s.uname}</td>
 	<td>${s.pass}</td>
+=======
+<<<<<<< HEAD
+
+	<td><input type="radio" name="id" value="${s.id}">
+	<td>"${s.name}"</td>
+	<td>"${s.uname}"</td>
+	<td>"${s.pass}"</td>
+=======
+	<td>${s.id}</td>
+	<td>${s.name}</td>
+	<td>${s.uname}</td>
+	<td>${s.pass}</td>
+>>>>>>> branch 'master' of https://github.com/teamAKR/demo_CrudGit.git
+>>>>>>> refs/heads/master
 </tr>
 </c:forEach>
 </table>

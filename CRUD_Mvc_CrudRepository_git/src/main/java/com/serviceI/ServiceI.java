@@ -11,10 +11,23 @@ public interface ServiceI
 
 	Student check(Student student);
 
-	List<Student> getAllData(Student st);
+	List<Student> getAllData();
 
+<<<<<<< HEAD
 	Student update(Student student);
 
 	Student edit(int id);
 
+=======
+	
+
+	void deleteStudent(int id);
+
+	
+
+	
+	
+
+	
+>>>>>>> refs/heads/master
 }

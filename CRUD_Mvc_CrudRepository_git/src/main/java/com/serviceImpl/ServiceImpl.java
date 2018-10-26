@@ -38,12 +38,13 @@ public class ServiceImpl implements ServiceI
 	}
 
 	@Override
-	public List<Student> getAllData(Student st)
+	public List<Student> getAllData()
 	{
 		
 		return (List<Student>) dao.findAll();
 	}
 
+<<<<<<< HEAD
 	@Override
 	public Student update(Student student) 
 	{
@@ -59,3 +60,20 @@ public class ServiceImpl implements ServiceI
 	}
 
 }
+=======
+	
+	@Override
+	public void deleteStudent(int id)
+	{
+		
+		System.out.println(id);
+		dao.delete(id);
+	}
+
+	
+
+	
+	
+	
+	}
+>>>>>>> refs/heads/master
