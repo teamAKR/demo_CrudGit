@@ -37,6 +37,7 @@ public class HomeController {
 		
 		user.setLogin(login);
 		user.setRole(role);
+		System.out.println("nikivijay");
 		
 		int i=service.saveUser(user);
 		if(i==0){
